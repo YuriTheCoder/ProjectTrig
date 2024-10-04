@@ -1,6 +1,6 @@
 # Site Interativo de Trigonometria com p5.js
 
-![Trigonometry Interactive](https://yourdomain.com/path-to-your-image.png)
+![Trigonometry Interactive](https://static.todamateria.com.br/upload/58/58/5858462cccfdc-circulo-trigonometrico.jpg)
 
 ## Sumário
 
@@ -91,7 +91,7 @@ Abra o terminal e execute o seguinte comando para clonar o repositório:
 git clone https://github.com/YuriTheCoder/ProjectTrig.git
 
 
-
+```
 
 
 
