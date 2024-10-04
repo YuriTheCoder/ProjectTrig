@@ -89,8 +89,6 @@ Abra o terminal e execute o seguinte comando para clonar o repositório:
 
 ```bash
 git clone https://github.com/YuriTheCoder/ProjectTrig.git
-
-
 ```
 
 
