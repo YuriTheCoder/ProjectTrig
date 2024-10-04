@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios - Círculo Trigonométrico Interativo</title>
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="conceitos.html">Conceitos Básicos</a></li>
+            <li><a href="seno.html">Seno</a></li>
+            <li><a href="cosseno.html">Cosseno</a></li>
+            <li><a href="tangente.html">Tangente</a></li>
+            <li><a href="exercicios.html">Exercícios</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo da Seção -->
+    <section id="exercicios">
+        <h1>Exercícios Interativos</h1>
+        <p>Resolva os exercícios abaixo para testar seus conhecimentos sobre trigonometria no círculo unitário.</p>
+
+        <!-- Exercício 1 -->
+        <div class="exercicio">
+            <p>1. Qual é o valor do seno de 30°?</p>
+            <input type="number" id="resposta1" placeholder="Digite sua resposta" step="0.01">
+            <button onclick="verificarResposta1()">Verificar</button>
+            <p id="feedback1"></p>
+        </div>
+
+        <!-- Exercício 2 -->
+        <div class="exercicio">
+            <p>2. Qual é o valor do cosseno de 45°?</p>
+            <input type="number" id="resposta2" placeholder="Digite sua resposta" step="0.01">
+            <button onclick="verificarResposta2()">Verificar</button>
+            <p id="feedback2"></p>
+        </div>
+
+        <!-- Exercício 3 -->
+        <div class="exercicio">
+            <p>3. Qual é o valor da tangente de 60°?</p>
+            <input type="number" id="resposta3" placeholder="Digite sua resposta" step="0.01">
+            <button onclick="verificarResposta3()">Verificar</button>
+            <p id="feedback3"></p>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/calcular.js"></script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Trigonométrica - Círculo Trigonométrico Interativo</title>
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="conceitos.html">Conceitos Básicos</a></li>
+            <li><a href="seno.html">Seno</a></li>
+            <li><a href="cosseno.html">Cosseno</a></li>
+            <li><a href="tangente.html">Tangente</a></li>
+            <li><a href="exercicios.html">Exercícios</a></li>
+            <li><a href="calculadora.html">Calculadora</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo da Seção -->
+    <section id="calculadora">
+        <h1>Calculadora Trigonométrica</h1>
+        <p>Insira um ângulo para calcular os valores de seno, cosseno e tangente.</p>
+
+        <div class="calculadora-container">
+            <input type="number" id="anguloInput" placeholder="Ângulo em graus" step="0.1">
+            <button onclick="calcularTrigonometria()">Calcular</button>
+        </div>
+
+        <div class="resultados">
+            <p>Seno: <span id="calcSeno">-</span></p>
+            <p>Cosseno: <span id="calcCosseno">-</span></p>
+            <p>Tangente: <span id="calcTangente">-</span></p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/calcular.js"></script>
+</body>
+</html>

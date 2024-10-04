@@ -1,0 +1,224 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do Menu de Navegação */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Estilo das Seções */
+section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Contêineres de Controles e Canvas */
+.controls-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls-container input[type="range"] {
+    width: 300px;
+    margin: 0 10px;
+}
+
+.controls-container button {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff9800;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.controls-container button:hover {
+    background-color: #e68900;
+}
+
+/* Contêiner do Canvas */
+#circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Seções Interativas */
+.interactive-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.valores, .resultados {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.valores p, .resultados p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo da Calculadora */
+.calculadora-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calculadora-container input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.calculadora-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculadora-container button:hover {
+    background-color: #43a047;
+}
+
+/* Estilo dos Exercícios */
+.exercicio {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.exercicio p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.exercicio input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.exercicio button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exercicio button:hover {
+    background-color: #1976d2;
+}
+
+.exercicio p#feedback1 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    #circle-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .controls-container {
+        flex-direction: column;
+    }
+
+    .controls-container input[type="range"] {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .controls-container button {
+        margin: 5px 0;
+    }
+}
