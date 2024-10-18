@@ -45,9 +45,8 @@ function draw() {
 function createControls() {
     // Slider de Ângulo
     angleSlider = select('#controls').elt;
-    angleSlider.innerHTML = ''; // Limpa qualquer conteúdo pré-existente
-
-    // Botão de Decremento
+    angleSlider.innerHTML = '';
+
     decreaseButton = createButton('-');
     decreaseButton.parent('controls');
     decreaseButton.mousePressed(() => {
